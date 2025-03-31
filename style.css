@@ -1,0 +1,86 @@
+/* Navigation */
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+nav{
+    margin: 40px 40px 40px 30px;
+   
+}
+
+.nav-item li{
+    display: inline;
+    text-decoration: none;
+ 
+}
+.nav-item> li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f5cf;
+}
+
+
+#about .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* About Section Styling */
+#about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between text and image */
+    padding: 20px; /* Optional: Adds padding around the section */
+}
+
+#about .about-text {
+    flex: 1; /* Ensures the text takes up equal space */
+    font-size: 1.1rem;
+    line-height: 2.0;
+    text-align: left; /* Aligns text to the left */
+}
+
+#about .about-image {
+    flex: 1; /* Ensures the image takes up equal space */
+    text-align: right; /* Aligns the image to the right */
+}
+
+#about .about-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: 35vh; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    display: block; /* Ensures proper alignment */
+}
+
+@media (max-width: 768px) {
+    #about .about-container {
+        flex-direction: column; /* Stacks text and image vertically */
+        text-align: center;
+    }
+
+    #about .about-image {
+        text-align: center; /* Centers the image */
+    }
+
+    #about .about-image img {
+        margin: 0 auto; /* Centers the image */
+    }
+}
